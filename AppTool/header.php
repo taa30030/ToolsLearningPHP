@@ -10,6 +10,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
+    @font-face {
+        font-family: 'mitr-regular-webfont';
+        src: url('mitr-regular-webfont.eot?#iefix') format('embedded-opentype'), url('mitr-regular-webfont.woff') format('woff'), url('mitr-regular-webfont.ttf') format('truetype'), url('mitr-regular-webfont.svg#mitr-regular-webfontI') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    }
+
+    body {
+        font-family: 'mitr-regular-webfont' !important;
+        /* background: url(img/bg.png); */
+        background: #f7f7f7;
+        background-size: cover;
+    }
+
     nav li {
         display: inline-block;
         margin-left: 10px;
@@ -19,6 +34,23 @@
 
     .logout {
         margin-right: 50px;
+    }
+
+    #img_container img {
+
+        height: 20%;
+        width: 20%;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+
+    h2 {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
     }
 
     img {
@@ -43,8 +75,9 @@
             <ul class="nav navbar-nav">
                 <li><img src="pics/icon-tools.png" /></li>
                 <li><a class="navbar-brand" href="#">ToolsLearning</a></li>
-                <li class="active"><a href="#">หน้าหลัก</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">จัดการข้อมูล<span class="caret"></span></a>
+                <li class="active"><a href="header.php?page=home">หน้าหลัก </a> </li>
+                <li class=" dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">จัดการข้อมูล<span
+                            class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">บทที่ 1</a></li>
                         <li><a href="#">บทที่ 2</a></li>
@@ -59,21 +92,27 @@
                     </ul>
                 </li>
 
-                <li><a href="#">จัดการข้อสอบ</a></li>
-                <li><a href="#">ถาม-ตอบ</a></li>
+                <li><a href="header.php?page=test">จัดการข้อสอบ</a></li>
+                <li><a href="header.php?page=course">จัดการเนื้อหา</a></li>
+                <li><a href="header.php?page=ask-question">ถาม-ตอบ</a></li>
             </ul>
             <div class="logout">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    <li><a href="header.php?page=logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div id="page-wrapper">
+        <?php
+        $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+        include($page.'.php');
+        ?>
 
-    <div class="container">
-        <h3>ToolsLearning</h3>
-        <p>This example adds a dropdown menu for the "Page 1" button in the navigation bar.</p>
+
     </div>
+
+
 
 </body>
 

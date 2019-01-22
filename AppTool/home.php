@@ -1,124 +1,114 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<style type="text/css">
-		@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-		body {
-			margin: 0;
-			background: #F7F7F7;
-			font-family: 'Work Sans', sans-serif;
-			font-weight: 800;
-		}
+<html lang="en">
 
-		.container {
-			width: 80%;
-			margin: 0 auto;
-		}
+<head>
+    <title>Toolslearning</title>
 
-		header {
-			background: #ffffff;
-		}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    @font-face {
+        font-family: 'mitr-regular-webfont';
+        src: url('mitr-regular-webfont.eot?#iefix') format('embedded-opentype'), url('mitr-regular-webfont.woff') format('woff'), url('mitr-regular-webfont.ttf') format('truetype'), url('mitr-regular-webfont.svg#mitr-regular-webfontI') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    }
 
-		header::after {
-			content: '';
-			display: table;
-			clear: both;
-		}
+    body {
+        font-family: 'mitr-regular-webfont' !important;
+        /* background: url(img/bg.png); */
+        background: #f7f7f7;
+        background-size: cover;
+    }
 
-		.logo {
-			float: left;
-			padding: 10px 0;
-		}
+    nav li {
+        display: inline-block;
+        margin-left: 10px;
+        /* padding-top: 20px; */
+        position: relative;
+    }
 
-		nav {
-			float: right;
-			margin-bottom: 20px;
-		}
+    .logout {
+        margin-right: 50px;
+    }
 
-		nav ul {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
+    #img_container img {
 
-		nav li {
-			display: inline-block;
-			margin-left: 70px;
-			padding-top: 23px;
+        height: 20%;
+        width: 20%;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
 
-			position: relative;
-		}
-		
-		nav li .drop {
-			margin-left: 0;
-		}
+    h2 {
+        margin-top: 60px;
+        text-align: center;
+    }
 
-		nav a {
-			color: #444;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: 14px;
-			width: 20px;
-		}
+    h3 {
+        text-align: center;
+    }
 
-		nav a:hover {
-			color: #1294FF;
-		}
+    img {
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+        margin-right: 0px !important;
+        display: inline;
+        /*  margin: auto auto;
+ display: block; */
+        /* vertical-align: middle; */
+        /* margin-bottom: 0px; */
+    }
+    </style>
+</head>
 
-		nav a::before {
-			content: '';
-			display: block;
-			height: 5px;
-			background-color: #1294FF;
+<body>
 
-			position: absolute;
-			top: 0;
-			width: 0%;
+    <!-- <nav class="navbar navbar-inverse">
+        <div>
 
-			transition: all ease-in-out 250ms;
-		}
+            <ul class="nav navbar-nav">
+                <li><img src="pics/icon-tools.png" /></li>
+                <li><a class="navbar-brand" href="#">ToolsLearning</a></li>
+                <li class="active"><a href="#">หน้าหลัก</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">จัดการข้อมูล<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">บทที่ 1</a></li>
+                        <li><a href="#">บทที่ 2</a></li>
+                        <li><a href="#">บทที่ 3</a></li>
+                        <li><a href="#">บทที่ 4</a></li>
+                        <li><a href="#">บทที่ 5</a></li>
+                        <li><a href="#">บทที่ 6</a></li>
+                        <li><a href="#">บทที่ 7</a></li>
+                        <li><a href="#">บทที่ 8</a></li>
+                        <li><a href="#">บทที่ 9</a></li>
+                        <li><a href="#">บทที่ 10</a></li>
+                    </ul>
+                </li>
 
-		nav a:hover::before {
-			width: 100%;
-		}
+                <li><a href="#">จัดการข้อสอบ</a></li>
+                <li><a href="#">ถาม-ตอบ</a></li>
+            </ul>
+            <div class="logout">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
 
-		</style>
-	</head>
-	<body>
-		<header>
-		
-				<div class="container">
-					<nav>
-						<ul>
-							<li><a href="#">หน้าหลัก</a></li>
-							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">จัดการข้อมูล<span class="caret"></span></a>
-											<ul class="dropdown-menu">
-												<li class="drop"><a href="#">บท1</a></li>
-												<li class="drop"><a href="#">บท2</a></li>
-												<li class="drop"><a href="#">บท3</a></li>
-												<li class="drop"><a href="#">บท4</a></li>
-												<li class="drop"><a href="#">บท5</a></li>
-												<li class="drop"><a href="#">บท6</a></li>
-												<li class="drop"><a href="#">บท7</a></li>
-												<li class="drop"><a href="#">บท8</a></li>
-												<li class="drop"><a href="#">บท9</a></li>
-												<li class="drop"><a href="#">บท10</a></li>
-												
-											</ul>
-										</li>
-							<li><a href="#">จัดการข้อสอบ</a></li>
-							<li><a href="#">ถาม-ตอบ</a></li>
-							<li><a href="#">ออกจากระบบ</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-	</body>
+    <div id="img_container">
+        <img src="pics/icon-tools.png" />
+    </div>
+    <h2>Application for self study in computer programming subject </h2>
+    <h3>แอปพลิเคชันเพื่อการเรียนรู้และเครื่องมือช่วยสอนสำหรับโปรแกรมมิ่ง </h3>
+
+
+</body>
+
 </html>
