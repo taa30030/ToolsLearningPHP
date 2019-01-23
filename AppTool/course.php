@@ -98,7 +98,7 @@
 
 <div class="cardout">
     <div class="card">
-        <div class="text">เนื้อหาเรียน</div>
+        <div class="text">บทเรียน</div>
     </div>
     <div class="upload">
         <form action="myform.cgi">
@@ -117,7 +117,7 @@
 </div>
 <div class="cardout">
     <div class="card">
-        <div class="text">บทเรียน</div>
+        <div class="text">แบบฝึกหัด</div>
     </div>
     <div class="upload">
         <form action="myform.cgi">

@@ -76,7 +76,7 @@
                 <li><img src="pics/icon-tools.png" /></li>
                 <li><a class="navbar-brand" href="#">ToolsLearning</a></li>
                 <li class="active"><a href="header.php?page=home">หน้าหลัก </a> </li>
-                <li class=" dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">จัดการข้อมูล<span
+                <!-- <li class=" dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">จัดการข้อมูล<span
                             class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">บทที่ 1</a></li>
@@ -90,10 +90,9 @@
                         <li><a href="#">บทที่ 9</a></li>
                         <li><a href="#">บทที่ 10</a></li>
                     </ul>
-                </li>
-
-                <li><a href="header.php?page=test">จัดการข้อสอบ</a></li>
+                </li> -->
                 <li><a href="header.php?page=course">จัดการเนื้อหา</a></li>
+                <li><a href="header.php?page=test">จัดการข้อสอบ</a></li>
                 <li><a href="header.php?page=ask-question">ถาม-ตอบ</a></li>
             </ul>
             <div class="logout">
