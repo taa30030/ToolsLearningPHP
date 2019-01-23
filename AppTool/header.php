@@ -21,7 +21,7 @@
     body {
         font-family: 'mitr-regular-webfont' !important;
         /* background: url(img/bg.png); */
-        background: #f7f7f7;
+        background: #fefefe;
         background-size: cover;
     }
 

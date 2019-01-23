@@ -21,7 +21,7 @@
     body {
         font-family: 'mitr-regular-webfont' !important;
         /* background: url(img/bg.png); */
-        background: #f7f7f7;
+        background: #fefefe;
         background-size: cover;
     }
 
@@ -43,7 +43,18 @@
         margin-left: 40%;
         margin-top: 5%;
     } */
-
+    .cardout{
+        padding-top:1px;
+        background: #f7f7f7;
+        margin-left: 20px;
+        margin-right:20px;
+        margin-top: 20px;
+        height: auto;
+        width: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+       
+    }
     .card {
         background: #1294ff;
         margin-left: 50px;
@@ -84,7 +95,7 @@
 </head>
 
 <body>
-
+<div class="cardout">
     <div class="card">
         <div class="text">ข้อสอบ</div>
     </div>
@@ -109,7 +120,7 @@
             <input type="submit" value="submit">
         </form>
     </div>
-
+</div>
 
 
 </body>

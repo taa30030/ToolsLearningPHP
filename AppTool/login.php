@@ -30,32 +30,33 @@
 
         margin: auto auto;
         display: block;
-        padding-top: 20px;
+        padding-top: 60px;
         display: flex;
         justify-content: center;
 
     }
 
     button {
-        background-color: #ffffff;
+        background:#129cff;
+        color:white;
         border-radius: 5px;
         cursor: pointer;
-        width: 200%;
+        width: 300%;
         height: 40px;
     }
 
     .card {
-
-        background: #f1f1f1;
-        height: 70%;
-        width: 50%;
+        padding-top: 40px;
+        background:#f7f7f7;
+        height: 30%;
+        width: 35%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-radius: 10px;
         margin: auto auto;
-        margin-bottom: 25px;
+        margin-top: 30px;
         /* display: flex;
         justify-content: center; */
-        vertical-align: middle;
+        /* vertical-align: middle; */
         /* 5px rounded corners */
     }
 
@@ -64,8 +65,8 @@
     }
 
     .pic {
-
-        height: 200px;
+        margin-top: 30%;
+        height: 25%;;
         margin: auto auto;
         display: block;
     }
@@ -112,16 +113,17 @@
 
 
 
-        <div class="card">
+        
             <div id="block">
                 <img class="pic" src="pics/icon-tools.png" />
             </div>
+        <div class="card">
             <div id="form">
                 <form class="form-horizontal" method="post">
                     <div class="form-group">
 
                         <label class="control-label col-sm-3">Username</label>
-                        <div class="col-sm-8">
+                        <div class="col-sm-6">
                             <input type="text" class="form-control" name="uname" placeholder="Username">
 
                         </div>
@@ -129,12 +131,12 @@
 
                     <div class="form-group">
                         <label class="control-label col-sm-3">Password</label>
-                        <div class="col-sm-8">
+                        <div class="col-sm-6">
                             <input type="password" class="form-control" name="pw" placeholder="Password">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-sm-offset-4 col-sm-3">
+                        <div class="col-sm-offset-4 col-sm-2">
                             <button type="submit" name="loginButton">
                                 Login</button>
                         </div>
